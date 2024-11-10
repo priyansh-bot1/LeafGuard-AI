@@ -54,7 +54,7 @@ export default function Features() {
             <div className="flex-1">
               <div className="bg-emerald-900/30 rounded-2xl p-8 backdrop-blur-sm border border-emerald-800/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1635176502606-de9f27e6833d?q=80&w=2070" 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" 
                   alt="AI Disease Detection" 
                   className="rounded-lg w-full h-64 object-cover mb-6"
                 />
@@ -96,7 +96,7 @@ export default function Features() {
             <div className="flex-1">
               <div className="bg-emerald-900/30 rounded-2xl p-8 backdrop-blur-sm border border-emerald-800/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?q=80&w=2069" 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" 
                   alt="Real-Time Monitoring Dashboard" 
                   className="rounded-lg w-full h-64 object-cover mb-6"
                 />
