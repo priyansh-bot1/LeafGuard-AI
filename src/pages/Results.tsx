@@ -171,13 +171,17 @@ export default function Results() {
               <Bell className="w-5 h-5 text-emerald-400" />
             </div>
             <div className="space-y-4">
-              <div className="flex items-center gap-3 p-3 bg-emerald-900/40 rounded-lg">
+              <div className="flex items-center gap-3 p-3 bg-yellow-900/40 rounded-lg">
                 <AlertTriangle className="w-5 h-5 text-yellow-400" />
-                <span className="text-emerald-100/80">Set threshold-based alerts</span>
+                <span className="text-yellow-100/80">Set threshold-based alerts</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-emerald-900/40 rounded-lg">
-                <Thermometer className="w-5 h-5 text-emerald-400" />
-                <span className="text-emerald-100/80">Environmental factor integration</span>
+              <div className="flex items-center gap-3 p-3 bg-blue-900/40 rounded-lg">
+                <Thermometer className="w-5 h-5 text-blue-400" />
+                <span className="text-blue-100/80">Environmental factor integration</span>
+              </div>
+              <div className="flex items-center gap-3 p-3 bg-red-900/40 rounded-lg">
+                <BarChart2 className="w-5 h-5 text-red-400" />
+                <span className="text-red-100/80">Environmental factor integration</span>
               </div>
             </div>
           </div>

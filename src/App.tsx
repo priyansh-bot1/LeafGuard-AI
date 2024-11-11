@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Features from './pages/Features';
 import Monitor from './pages/Monitor';
 import ProtectOrchard from './pages/ProtectOrchard';
+import Results from './pages/Results';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/features" element={<Features />} />
           <Route path="/monitor" element={<Monitor />} />
           <Route path="/protect-orchard" element={<ProtectOrchard />} />
+          <Route path="/results" element={<Results/>} />
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </div>
