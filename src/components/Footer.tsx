@@ -18,13 +18,13 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900">
+    <footer className="bg-[#002820]">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* About Section */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">About LeafGuard AI</h3>
-            <p className="text-slate-400 text-sm">
+            <p className="text-emerald-100/70 text-sm">
               Empowering orchards with advanced AI technology for disease management
               and healthier crops.
             </p>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-slate-400 hover:text-emerald-400 text-sm transition-colors"
+                    className="text-emerald-100/70 hover:text-emerald-400 text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -51,10 +51,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
             <div className="space-y-2">
-              <p className="text-slate-400 text-sm">
+              <p className="text-emerald-100/70 text-sm">
                 Email: support@leafguardai.com
               </p>
-              <p className="text-slate-400 text-sm">
+              <p className="text-emerald-100/70 text-sm">
                 Phone: (555) 123-4567
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
+                  className="text-emerald-100/70 hover:text-emerald-400 transition-colors"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -79,8 +79,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-slate-800 mt-12 pt-8">
-          <p className="text-center text-slate-400 text-sm">
+        <div className="border-t border-emerald-900/50 mt-12 pt-8">
+          <p className="text-center text-emerald-100/70 text-sm">
             © {new Date().getFullYear()} LeafGuard AI. All rights reserved.
           </p>
         </div>
