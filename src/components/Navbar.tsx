@@ -33,7 +33,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
+          <button className="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all" onClick={() => window.location.href = '/get-started'}>
             Get Started
           </button>
         </div>

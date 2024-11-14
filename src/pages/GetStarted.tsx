@@ -13,7 +13,7 @@ export default function GetStarted() {
         </div>
         <div className="absolute top-0 left-0 right-0 h-[28rem] bg-[url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013')] bg-cover bg-center opacity-20" />
         
-        <div className="relative container mx-auto px-6 py-24 text-center">
+        <div className="relative container mx-auto px-6 py-36 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Welcome to LeafGuard AI
           </h1>
@@ -23,7 +23,7 @@ export default function GetStarted() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 py-48">
         <OnboardingSteps />
         <SubscriptionPlans />
         <SupportResources />
