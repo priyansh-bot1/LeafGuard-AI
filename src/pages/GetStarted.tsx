@@ -1,7 +1,7 @@
 import React from 'react';
-import OnboardingSteps from 'components/getStarted/OnboardingSteps';
-import SubscriptionPlans from 'components/getStarted/SubscriptionPlans';
-import SupportResources from 'components/getStarted/SupportResources';
+import OnboardingSteps from '../components/getStarted/OnboardingSteps';
+import SubscriptionPlans from '../components/getStarted/SubscriptionPlans';
+import SupportResources from '../components/getStarted/SupportResources';
 
 export default function GetStarted() {
   return (
