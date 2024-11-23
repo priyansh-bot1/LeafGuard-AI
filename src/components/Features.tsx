@@ -12,7 +12,8 @@ const features = [
   {
     icon: <Eye className="w-6 h-6 text-emerald-400" />,
     title: "Real-time Monitoring",
-    description: "Continuous monitoring of leaf health with instant alerts"
+    description: "Continuous monitoring of leaf health with instant alerts",
+    path: "/real-time-monitoring"
   },
   {
     icon: <Activity className="w-6 h-6 text-emerald-400" />,
