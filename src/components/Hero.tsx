@@ -23,9 +23,11 @@ export default function Hero() {
               Get Started Free
             </button>
             </Link>
+            <Link to = "/open-demo">
             <button className="px-8 py-3 bg-emerald-900/30 hover:bg-emerald-900/40 text-white rounded-md backdrop-blur-sm transition-all border border-emerald-700/30">
               Open Demo
             </button>
+            </Link>
           </div>
         </div>
       </div>
