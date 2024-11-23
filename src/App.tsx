@@ -9,6 +9,7 @@ import ProtectOrchard from './pages/ProtectOrchard';
 import Results from './pages/Results';
 import GetStarted from './pages/GetStarted';
 import OpenDemo from './pages/OpenDemo';
+import RealTimeMonitoring from './pages/RealTimeMonitoring';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/results" element={<Results />} />
             <Route path="/get-started" element={<GetStarted />} />
             <Route path="/open-demo" element={<OpenDemo />} />
+            <Route path="/real-time-monitoring" element={<RealTimeMonitoring />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
