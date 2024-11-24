@@ -19,12 +19,13 @@ const features = [
     icon: <Activity className="w-6 h-6 text-emerald-400" />,
     title: "Disease Analysis",
     description: "Accurate diagnosis of Black Rot, Cedar Rust, and Apple Scab",
-    path : "/disease-analysis"
+    path: "/disease-analysis"
   },
   {
     icon: <Bell className="w-6 h-6 text-emerald-400" />,
     title: "Growth Tracking",
-    description: "Monitor healthy growth patterns and development"
+    description: "Monitor healthy growth patterns and development",
+    path: "/growth-tracking"
   },
   {
     icon: <Leaf className="w-6 h-6 text-emerald-400" />,
