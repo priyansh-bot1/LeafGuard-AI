@@ -11,6 +11,7 @@ import GetStarted from './pages/GetStarted';
 import OpenDemo from './pages/OpenDemo';
 import RealTimeMonitoring from './pages/RealTimeMonitoring';
 import DiseaseAnalysis from './pages/DiseaseAnalysis';
+import GrowthTracking from './pages/GrowthTracking';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/open-demo" element={<OpenDemo />} />
             <Route path="/real-time-monitoring" element={<RealTimeMonitoring />} />
             <Route path="/disease-analysis" element={<DiseaseAnalysis />} />
+            <Route path="/growth-tracking" element={<GrowthTracking />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
