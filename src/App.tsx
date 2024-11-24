@@ -10,6 +10,7 @@ import Results from './pages/Results';
 import GetStarted from './pages/GetStarted';
 import OpenDemo from './pages/OpenDemo';
 import RealTimeMonitoring from './pages/RealTimeMonitoring';
+import DiseaseAnalysis from './pages/DiseaseAnalysis';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/get-started" element={<GetStarted />} />
             <Route path="/open-demo" element={<OpenDemo />} />
             <Route path="/real-time-monitoring" element={<RealTimeMonitoring />} />
+            <Route path="/disease-analysis" element={<DiseaseAnalysis />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
