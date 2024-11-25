@@ -12,6 +12,7 @@ import OpenDemo from './pages/OpenDemo';
 import RealTimeMonitoring from './pages/RealTimeMonitoring';
 import DiseaseAnalysis from './pages/DiseaseAnalysis';
 import GrowthTracking from './pages/GrowthTracking';
+import LeafHealthMap from './pages/LeafHealthMap';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/real-time-monitoring" element={<RealTimeMonitoring />} />
             <Route path="/disease-analysis" element={<DiseaseAnalysis />} />
             <Route path="/growth-tracking" element={<GrowthTracking />} />
+            <Route path="/leaf-health-map" element={<LeafHealthMap />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
