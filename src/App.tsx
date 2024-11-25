@@ -13,6 +13,7 @@ import RealTimeMonitoring from './pages/RealTimeMonitoring';
 import DiseaseAnalysis from './pages/DiseaseAnalysis';
 import GrowthTracking from './pages/GrowthTracking';
 import LeafHealthMap from './pages/LeafHealthMap';
+import ProtectTrees from './pages/ProtectTrees';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/disease-analysis" element={<DiseaseAnalysis />} />
             <Route path="/growth-tracking" element={<GrowthTracking />} />
             <Route path="/leaf-health-map" element={<LeafHealthMap />} />
+            <Route path="/protect-trees" element={<ProtectTrees />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
@@ -40,5 +42,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
