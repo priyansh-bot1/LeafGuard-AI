@@ -30,7 +30,8 @@ const features = [
   {
     icon: <Leaf className="w-6 h-6 text-emerald-400" />,
     title: "Leaf Health Map",
-    description: "Visual health indicators with color-coded analysis"
+    description: "Visual health indicators with color-coded analysis",
+    path: "/leaf-health-map"
   }
 ];
 
