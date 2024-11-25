@@ -1,5 +1,6 @@
 import React from 'react';
 import { Apple, Bell, Leaf, Settings } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const features = [
   {
@@ -25,6 +26,8 @@ const features = [
 ];
 
 export default function ProtectOrchard() {
+  const navigate = useNavigate();
+
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -43,7 +46,10 @@ export default function ProtectOrchard() {
           <p className="text-xl text-emerald-100/80 mb-8 max-w-2xl">
             Monitor and protect your plants with early disease detection. Our advanced AI system helps you maintain optimal orchard health.
           </p>
-          <button className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
+          <button 
+            onClick={() => navigate('/protect-trees')}
+            className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all"
+          >
             Protect Your Trees
           </button>
         </div>
@@ -80,7 +86,10 @@ export default function ProtectOrchard() {
           <p className="text-emerald-100/80 mb-8 max-w-2xl mx-auto">
             Join thousands of orchard owners who trust LeafGuard AI for their plant protection needs.
           </p>
-          <button className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
+          <button 
+            onClick={() => navigate('/protect-trees')}
+            className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all"
+          >
             Get Started Now
           </button>
         </div>
