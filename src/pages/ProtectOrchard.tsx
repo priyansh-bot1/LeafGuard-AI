@@ -6,7 +6,8 @@ const features = [
   {
     icon: <Apple className="w-6 h-6" />,
     title: "Disease Identification",
-    description: "Early detection system for common plant diseases using advanced AI"
+    description: "Early detection system for common plant diseases using advanced AI",
+    path : "/disease-identification"
   },
   {
     icon: <Bell className="w-6 h-6" />,
@@ -62,6 +63,7 @@ export default function ProtectOrchard() {
             <div
               key={index}
               className="bg-emerald-900/20 backdrop-blur-sm p-8 rounded-xl border border-emerald-800/20 hover:bg-emerald-900/30 transition-all duration-300"
+              onClick={() => feature.path && navigate(feature.path)}
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 mb-4">
                 {feature.icon}
