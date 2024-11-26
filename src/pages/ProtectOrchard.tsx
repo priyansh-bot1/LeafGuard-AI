@@ -7,18 +7,19 @@ const features = [
     icon: <Apple className="w-6 h-6" />,
     title: "Disease Identification",
     description: "Early detection system for common plant diseases using advanced AI",
-    path : "/disease-identification"
+    path: "/disease-identification"
   },
   {
     icon: <Bell className="w-6 h-6" />,
     title: "Alerts & Notifications",
-    description: "Real-time alerts when potential issues are detected in your orchard"
+    description: "Real-time alerts when potential issues are detected in your orchard",
+    path: "/alerts-notifications"
   },
   {
     icon: <Settings className="w-6 h-6" />,
     title: "Health Analysis",
     description: "Comprehensive health reports with actionable insights",
-    path : "/health-analysis"
+    path: "/health-analysis"
   },
   {
     icon: <Leaf className="w-6 h-6" />,
@@ -63,7 +64,7 @@ export default function ProtectOrchard() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-emerald-900/20 backdrop-blur-sm p-8 rounded-xl border border-emerald-800/20 hover:bg-emerald-900/30 transition-all duration-300"
+              className="bg-emerald-900/20 backdrop-blur-sm p-8 rounded-xl border border-emerald-800/20 hover:bg-emerald-900/30 transition-all duration-300 cursor-pointer"
               onClick={() => feature.path && navigate(feature.path)}
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 mb-4">
