@@ -17,6 +17,7 @@ import ProtectTrees from './pages/ProtectTrees';
 import DiseaseIdentification from './pages/DiseaseIdentification';
 import HealthAnalysis from './pages/HealthAnalysis';
 import AlertsNotifications from './pages/AlertsNotifications';
+import GrowthMonitoring from './pages/GrowthMonitoring';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/disease-identification" element={<DiseaseIdentification />} />
             <Route path="/health-analysis" element={<HealthAnalysis />} />
             <Route path="/alerts-notifications" element={<AlertsNotifications />} />
+            <Route path="/growth-monitoring" element={<GrowthMonitoring />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>

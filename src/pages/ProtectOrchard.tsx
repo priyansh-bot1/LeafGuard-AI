@@ -24,7 +24,8 @@ const features = [
   {
     icon: <Leaf className="w-6 h-6" />,
     title: "Growth Monitoring",
-    description: "Track and analyze growth patterns for optimal yield"
+    description: "Track and analyze growth patterns for optimal yield",
+    path: "/growth-monitoring"
   }
 ];
 
