@@ -17,7 +17,8 @@ const features = [
   {
     icon: <Settings className="w-6 h-6" />,
     title: "Health Analysis",
-    description: "Comprehensive health reports with actionable insights"
+    description: "Comprehensive health reports with actionable insights",
+    path : "/health-analysis"
   },
   {
     icon: <Leaf className="w-6 h-6" />,
