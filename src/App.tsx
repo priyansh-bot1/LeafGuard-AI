@@ -43,7 +43,7 @@ function App() {
             <Route path="/health-analysis" element={<HealthAnalysis />} />
             <Route path="/alerts-notifications" element={<AlertsNotifications />} />
             <Route path="/growth-monitoring" element={<GrowthMonitoring />} />
-            <Route path="/alert-details/:id" element={<AlertDetails />} />
+            <Route path="/alert-details" element={<AlertDetails />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>

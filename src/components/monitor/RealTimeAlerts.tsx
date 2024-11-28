@@ -1,5 +1,6 @@
 import React from 'react';
 import { AlertTriangle, Bell, Info } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const alerts = [
   {
@@ -49,9 +50,11 @@ export default function RealTimeAlerts() {
                 <p className="text-sm text-emerald-100/60">{alert.time}</p>
               </div>
             </div>
+            <Link to="/alert-details">
             <button className="text-sm text-emerald-400 hover:text-emerald-300">
               View Details
             </button>
+            </Link>
           </div>
         ))}
       </div>
