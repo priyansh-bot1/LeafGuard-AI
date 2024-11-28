@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, BarChart2 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 export default function HistoricalData() {
   return (
     <div className="bg-emerald-900/30 rounded-xl p-6 backdrop-blur-sm border border-emerald-800/20">
@@ -33,9 +33,11 @@ export default function HistoricalData() {
         <div className="h-64 bg-emerald-900/40 rounded-lg flex items-center justify-center text-emerald-100/60 mb-4">
           [Interactive Seasonal Map]
         </div>
+        <Link to="/historical-analysis">
         <button className="text-emerald-400 hover:text-emerald-300 text-sm">
           View Detailed Historical Analysis
         </button>
+        </Link>
       </div>
     </div>
   );
