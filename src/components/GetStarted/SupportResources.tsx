@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, HeadphonesIcon, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const resources = [
   {
@@ -7,7 +8,7 @@ const resources = [
     title: 'Knowledge Base',
     description: 'Access our extensive library of articles and FAQs.',
     action: 'Explore Resources',
-    link: '#'
+    link: '/explore-resources'
   },
   {
     icon: <HeadphonesIcon className="w-6 h-6" />,
@@ -46,12 +47,12 @@ export default function SupportResources() {
             <p className="text-emerald-100/70 mb-6">
               {resource.description}
             </p>
-            <a
-              href={resource.link}
+            <Link
+              to={resource.link}
               className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
             >
               {resource.action} →
-            </a>
+            </Link>
           </div>
         ))}
       </div>
