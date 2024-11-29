@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const plans = [
   {
@@ -65,6 +66,7 @@ export default function SubscriptionPlans() {
                 </li>
               ))}
             </ul>
+            <Link to="/choose-plan">
             <button className={`w-full py-2 rounded-md transition-all ${
               plan.highlighted
                 ? 'bg-emerald-500 hover:bg-emerald-400 text-white'
@@ -72,6 +74,7 @@ export default function SubscriptionPlans() {
             }`}>
               Choose Plan
             </button>
+            </Link>
           </div>
         ))}
       </div>

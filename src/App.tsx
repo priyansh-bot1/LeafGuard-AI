@@ -20,6 +20,7 @@ import AlertsNotifications from './pages/AlertsNotifications';
 import GrowthMonitoring from './pages/GrowthMonitoring';
 import AlertDetails from './pages/AlertDetails';
 import HistoricalAnalysis from './pages/HistoricalAnalysis';
+import ChoosePlan from './pages/ChoosePlan';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/growth-monitoring" element={<GrowthMonitoring />} />
             <Route path="/alert-details" element={<AlertDetails />} />
             <Route path="/historical-analysis" element={<HistoricalAnalysis />} />
+            <Route path="/choose-plan" element={<ChoosePlan />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
