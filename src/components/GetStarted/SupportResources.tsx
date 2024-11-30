@@ -22,7 +22,7 @@ const resources = [
     title: 'Live Chat',
     description: 'Real-time assistance for immediate help.',
     action: 'Start Chat',
-    link: '#'
+    link: '/start-chat'
   }
 ];
 
