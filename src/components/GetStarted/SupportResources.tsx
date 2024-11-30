@@ -15,7 +15,7 @@ const resources = [
     title: 'Customer Support',
     description: 'Get help from our dedicated support team.',
     action: 'Contact Support',
-    link: '#'
+    link: '/contact-support'
   },
   {
     icon: <MessageSquare className="w-6 h-6" />,
