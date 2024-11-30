@@ -23,6 +23,7 @@ import HistoricalAnalysis from './pages/HistoricalAnalysis';
 import ChoosePlan from './pages/ChoosePlan';
 import ExploreResources from './pages/ExploreResources';
 import ContactSupport from './pages/ContactSupport';
+import StartChat from './pages/StartChat';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route path="/choose-plan" element={<ChoosePlan />} />
             <Route path="/explore-resources" element={<ExploreResources />} />
             <Route path="/contact-support" element={<ContactSupport />} />
+            <Route path="/start-chat" element={<StartChat />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
