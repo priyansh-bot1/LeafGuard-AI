@@ -11,10 +11,10 @@ export default function LeafHealthMap() {
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-2xl font-bold text-white">Leaf Health Map</h1>
           <div className="flex gap-3">
-            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white rounded-md transition-all">
+            <button className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
               Capture
             </button>
-            <button className="px-4 py-2 bg-purple-500 hover:bg-purple-400 text-white rounded-md transition-all">
+            <button className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
               AI Analysis
             </button>
             <button className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">

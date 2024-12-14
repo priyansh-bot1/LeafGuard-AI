@@ -37,7 +37,7 @@ export default function DiseaseProfiles() {
         ))}
       </div>
 
-      <button className="w-full px-4 py-2 bg-indigo-500 hover:bg-indigo-400 text-white rounded-md transition-all">
+      <button className="w-full px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
         View All Profiles
       </button>
     </div>

@@ -13,7 +13,7 @@ export default function GeographicMapping() {
         Interactive Map Placeholder
       </div>
 
-      <button className="w-full px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white rounded-md transition-all">
+      <button className="w-full px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
         View Full Map
       </button>
     </div>

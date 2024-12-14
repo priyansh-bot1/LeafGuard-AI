@@ -21,7 +21,7 @@ export default function SpreadPrediction() {
         </div>
       </div>
 
-      <button className="w-full px-4 py-2 bg-purple-500 hover:bg-purple-400 text-white rounded-md transition-all">
+      <button className="w-full px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-white rounded-md transition-all">
         Run Simulation
       </button>
     </div>

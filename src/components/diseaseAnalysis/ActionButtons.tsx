@@ -5,17 +5,17 @@ const actions = [
   {
     icon: <FileText className="w-5 h-5" />,
     label: 'Generate Report',
-    color: 'bg-blue-500 hover:bg-blue-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   },
   {
     icon: <BookOpen className="w-5 h-5" />,
     label: 'Learn More',
-    color: 'bg-purple-500 hover:bg-purple-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   },
   {
     icon: <HelpCircle className="w-5 h-5" />,
     label: 'Request Assistance',
-    color: 'bg-orange-500 hover:bg-orange-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   }
 ];
 

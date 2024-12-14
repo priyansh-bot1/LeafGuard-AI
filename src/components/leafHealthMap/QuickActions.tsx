@@ -10,17 +10,17 @@ const actions = [
   {
     icon: <Database className="w-5 h-5" />,
     label: 'Update Data',
-    color: 'bg-blue-500 hover:bg-blue-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   },
   {
     icon: <FileText className="w-5 h-5" />,
     label: 'Generate Report',
-    color: 'bg-purple-500 hover:bg-purple-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   },
   {
     icon: <Bell className="w-5 h-5" />,
     label: 'Set Custom Alert',
-    color: 'bg-yellow-500 hover:bg-yellow-400'
+    color: 'bg-emerald-500 hover:bg-emerald-400'
   }
 ];
 
