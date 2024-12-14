@@ -24,6 +24,7 @@ import ChoosePlan from './pages/ChoosePlan';
 import ExploreResources from './pages/ExploreResources';
 import ContactSupport from './pages/ContactSupport';
 import StartChat from './pages/StartChat';
+import FloatingChatbot from './components/chat/FloatingChatbot';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        <FloatingChatbot />
       </div>
     </BrowserRouter>
   );
