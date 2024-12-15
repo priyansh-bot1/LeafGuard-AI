@@ -8,14 +8,17 @@ export default function FloatingChatbot() {
   const { messages, sendMessage, initializeChat, isInitialized } = useChat();
   const [newMessage, setNewMessage] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    if (isOpen) {
+      scrollToBottom();
+    }
+  }, [messages, isOpen]);
 
   const handleInitialize = () => {
     if (apiKey.trim()) {
@@ -39,17 +42,17 @@ export default function FloatingChatbot() {
       {/* Floating Button with Pulse Effect */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 p-4 bg-gradient-to-r from-emerald-500 to-emerald-400 text-white rounded-full shadow-lg transition-all z-50 hover:scale-110 group"
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 p-3 sm:p-4 bg-gradient-to-r from-emerald-500 to-emerald-400 text-white rounded-full shadow-lg transition-all z-50 hover:scale-110 group"
       >
-        <MessageSquare className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-        <span className="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
+        <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 group-hover:rotate-12 transition-transform" />
+        <span className="absolute top-0 right-0 w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full animate-pulse"></span>
       </button>
 
       {/* Chat Window with Animation */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 bg-gradient-to-b from-emerald-900/95 to-emerald-800/95 backdrop-blur-md rounded-xl shadow-2xl border border-emerald-700/30 z-50 animate-slideUp">
-          {/* Header with Gradient */}
-          <div className="bg-gradient-to-r from-emerald-800/50 to-emerald-700/50 p-4 rounded-t-xl border-b border-emerald-700/30 flex items-center justify-between">
+        <div className="fixed inset-0 sm:inset-auto sm:bottom-24 sm:right-6 sm:w-96 bg-gradient-to-b from-emerald-900/95 to-emerald-800/95 backdrop-blur-md rounded-none sm:rounded-xl shadow-2xl border border-emerald-700/30 z-50 animate-slideUp flex flex-col max-h-[100vh] sm:max-h-[600px]">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-emerald-800/50 to-emerald-700/50 p-4 rounded-t-xl border-b border-emerald-700/30 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-emerald-500/20 rounded-lg">
                 <Bot className="w-5 h-5 text-emerald-400" />
@@ -67,13 +70,16 @@ export default function FloatingChatbot() {
             </button>
           </div>
 
-          {/* Messages Area with Better Styling */}
-          <div className="h-96 overflow-y-auto p-4 space-y-4 scrollbar-thin scrollbar-thumb-emerald-700/30 scrollbar-track-transparent">
+          {/* Messages Area */}
+          <div 
+            ref={messagesContainerRef}
+            className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-thin scrollbar-thumb-emerald-700/30 scrollbar-track-transparent"
+          >
             {!isInitialized ? (
               <div className="space-y-4 animate-fadeIn">
                 <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-4">
                   <p className="text-emerald-100/80 mb-4">Welcome! Please enter your Gemini API key to start chatting:</p>
-                  <div className="flex gap-2">
+                  <div className="flex flex-col sm:flex-row gap-2">
                     <input
                       type="password"
                       value={apiKey}
@@ -100,12 +106,12 @@ export default function FloatingChatbot() {
                   } animate-fadeIn`}
                 >
                   {msg.type === 'bot' && (
-                    <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
                       <Bot className="w-5 h-5 text-emerald-400" />
                     </div>
                   )}
                   <div
-                    className={`max-w-[70%] rounded-lg px-4 py-2 ${
+                    className={`max-w-[80%] sm:max-w-[70%] rounded-lg px-4 py-2 ${
                       msg.type === 'user'
                         ? 'bg-gradient-to-r from-emerald-500 to-emerald-400 text-white'
                         : 'bg-emerald-900/40 text-emerald-100/80 border border-emerald-700/30'
@@ -114,7 +120,7 @@ export default function FloatingChatbot() {
                     {msg.content}
                   </div>
                   {msg.type === 'user' && (
-                    <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
                       <User className="w-5 h-5 text-emerald-400" />
                     </div>
                   )}
@@ -124,9 +130,9 @@ export default function FloatingChatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Area with Enhanced Design */}
+          {/* Input Area */}
           {isInitialized && (
-            <form onSubmit={handleSendMessage} className="p-4 border-t border-emerald-700/30 bg-emerald-900/50">
+            <form onSubmit={handleSendMessage} className="p-4 border-t border-emerald-700/30 bg-emerald-900/50 flex-shrink-0">
               <div className="flex gap-2">
                 <input
                   type="text"
