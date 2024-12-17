@@ -9,10 +9,10 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-[28rem] bg-[url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013')] bg-cover bg-center opacity-20" />
       
       <div className="relative container mx-auto px-6 py-24">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Revolutionizing Orchard Management
         </h1>
-        <p className="text-lg md:text-xl text-emerald-100/80 mb-8 max-w-3xl">
+        <p className="text-xl text-emerald-100/80 mb-8 max-w-3xl">
           At LeafGuard AI, we're transforming agriculture through cutting-edge artificial intelligence 
           and a deep commitment to sustainable farming practices.
         </p>
