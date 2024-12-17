@@ -5,7 +5,7 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: <Github className="w-5 h-5" />,
-    url: 'https://github.com/ALGOREX-PH/LeafGuard-AI',
+    url: 'https://github.com/ALGOREX-PH',
     color: 'hover:bg-gray-700'
   },
   {
@@ -17,7 +17,7 @@ const socialLinks = [
   {
     name: 'Facebook',
     icon: <Facebook className="w-5 h-5" />,
-    url: 'https://www.facebook.com/LeafGuardAI',
+    url: 'https://www.facebook.com/debbie.meer/',
     color: 'hover:bg-blue-500'
   }
 ];
