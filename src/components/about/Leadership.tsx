@@ -8,7 +8,7 @@ export default function Leadership() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574" 
+              src="https://raw.githubusercontent.com/ALGOREX-PH/LeafGuard-AI/refs/heads/main/src/images/462359443_538218162149662_3966092412338603545_n.jpg" 
               alt="CEO Portrait"
               className="rounded-lg shadow-2xl border-2 border-emerald-500/20 w-full"
             />
@@ -23,7 +23,7 @@ export default function Leadership() {
             <p className="text-base md:text-lg text-emerald-100/80 mb-6 leading-relaxed">
               A visionary leader in agricultural technology, Danielle has pioneered the integration of AI 
               in orchard management. With over 15 years of experience in both technology and agriculture, 
-              she founded LeafGuard AI with a mission to revolutionize how we protect and nurture our orchards.
+              Danielle founded LeafGuard AI with a mission to revolutionize how we protect and nurture our orchards.
             </p>
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-emerald-100/70">
