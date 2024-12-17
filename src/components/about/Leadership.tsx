@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, Target, Users } from 'lucide-react';
-
+import SocialLinks from '../components/about/SocialLinks';
 export default function Leadership() {
   return (
     <div className="container mx-auto px-6 py-20">
@@ -44,6 +44,7 @@ export default function Leadership() {
               farming not just possible, but profitable. We're not just protecting trees; we're 
               securing our agricultural future."
             </blockquote>
+            <SocialLinks />
           </div>
         </div>
       </div>
