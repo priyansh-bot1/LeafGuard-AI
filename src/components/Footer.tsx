@@ -12,7 +12,7 @@ const quickLinks = [
 const socialLinks = [
   { icon: <Facebook className="w-5 h-5" />, href: 'https://www.facebook.com/debbie.meer/', label: 'Facebook' },
   { icon: <Twitter className="w-5 h-5" />, href: 'https://www.facebook.com/debbie.meer/', label: 'Twitter' },
-  { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/in/danielle-bagaforo-meer-b2b3b5297/', label: 'LinkedIn' },
+  { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/in/algorexph/', label: 'LinkedIn' },
   { icon: <Instagram className="w-5 h-5" />, href: 'https://www.facebook.com/debbie.meer/', label: 'Instagram' }
 ];
 

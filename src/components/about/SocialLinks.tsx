@@ -11,7 +11,7 @@ const socialLinks = [
   {
     name: 'LinkedIn',
     icon: <Linkedin className="w-5 h-5" />,
-    url: 'https://www.linkedin.com/in/danielle-bagaforo-meer-b2b3b5297/',
+    url: 'https://www.linkedin.com/in/algorexph/',
     color: 'hover:bg-blue-600'
   },
   {
