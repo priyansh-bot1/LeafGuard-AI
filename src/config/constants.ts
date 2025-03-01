@@ -1,4 +1,4 @@
-export const GEMINI_API_KEY = 'AIzaSyBH1Kpp1f1IJXcpl7Gsgro-FsVoJItV-pY';
+export const GEMINI_API_KEY = 'AIzaSyAM5TngKks5XIqqBfAGLibg4ewXacT7lPc';
 
 export const CHAT_INITIAL_MESSAGE = 'Hello! How can I assist you today with LeafGuard AI?';
 
