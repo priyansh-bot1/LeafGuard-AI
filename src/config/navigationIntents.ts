@@ -190,9 +190,4 @@ export const navigationIntents: NavigationIntent[] = [
     path: '/about',
     response: "Here's more information about LeafGuard AI on our About Us page."
   },
-  {
-    patterns: [/.*/],
-    path: '/home',
-    response: "Couldn't quite catch that. Redirecting to the home page!"
-  }
 ];

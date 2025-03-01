@@ -6,8 +6,8 @@ let model: any = null;
 let chat: any = null;
 
 export const initializeGemini = (apiKey: string) => {
-  genAI = new GoogleGenerativeAI(apiKey);
-  model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  genAI = new GoogleGenerativeAI("AIzaSyAM5TngKks5XIqqBfAGLibg4ewXacT7lPc");
+  model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
   chat = model.startChat({
     history: [
       {
